@@ -1,16 +1,202 @@
 <!DOCTYPE html>
-    <html lang="es">
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Go Live Server - Proyecto</title>
-        <link rel="stylesheet" href="/style/styles.css">
-    </head>
-    <body>
-        <h1>¡Bienvenido a Go Live Server!</h1>
-        <p>Tu servidor de desarrollo está funcionando correctamente.</p>
-        <p>Edita este archivo en <code>views/index.html</code> para comenzar.</p>
+ <title>Trip of Nepal</title>
+    <link rel="icon" type="photo" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkqVQdZPx0lQJxBizS0-H8bhowbHtJSHGqPvoCBrHsCsmyHhwmwvH4ZzY&s">
+  <meta name="description" content="Beautiful, responsive single-page demo: Tour of Nepal. Built with modern HTML, CSS and a touch of JS." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+    <header>
         
-    </body>
-    </html>
-      
+      <div class="brand">
+        <div class="logo">T-N</div>
+        <div>
+          <h1><marquee scrollamount="20px" direction="right" width="600"><b>Trip of Nepal</b></marquee></h1>
+          <div class="sub">Himalaya • Culture • Adventure</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#destinations">Destinations</a>
+        <a href="#itinerary">Itinerary</a>
+        <a href="#book">Book</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-left">
+          <div class="kicker">100% locally guided</div>
+          <h2 id="hero-heading" class="headline">Explore Nepal — from Kathmandu to the high Himalaya</h2>
+          <p class="lead">7 days of culture, mountain views, and unforgettable trails. This demo page showcases a crisp, responsive layout you can reuse for small travel sites or landing pages.</p>
+          <div class="actions">
+            <button class="btn btn-primary" onclick="scrollToSection('book')">Start booking</button>
+            <button class="btn btn-ghost" onclick="scrollToSection('destinations')">See destinations</button>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div class="stat">
+            <div>
+              <strong>7 days</strong>
+              <div class="small">Suggested trip length</div>
+            </div>
+          </div>
+          <div style="height:12px"></div>
+          <div class="stat">
+            <div>
+              <strong>25% OFF Price</strong>
+              <div class="small">Per person (demo price)</div>
+            </div>
+          </div>
+          <div style="height:12px"></div>
+          <div class="stat">
+            <div>
+              <strong>Guides</strong>
+              <div class="small">Local English-speaking guides</div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="destinations">
+        <h2 style="margin-top:28px">Top destinations</h2>
+        <div class="grid">
+          <article class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTErEgo8KaHTFhJRrrCo2nRSUSXjXPKtW4I0A&s" width="400">
+
+            <div class="card-body">
+              <h3><a href="https://en.wikipedia.org/wiki/Kathmandu_Valley">Kathmandu Valley</a></h3>
+              <p>Ancient temples, bustling markets and timeless culture in the heart of Nepal.</p>
+              <div class="tag">Culture • UNESCO</div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://hblimg.mmtcdn.com/content/hubble/img/pokharadestimages/mmt/activities/m_Phewa_Lake_1_l_461_640.jpg" alt="Pokhara Fewa Lake" width="400" />
+            <div class="card-body">
+              <h3><a href="https://en.wikipedia.org/wiki/Phewa_Lake">Pokhara &amp; Fewa Lake</a></h3>
+              <p>Gateway to Annapurna views, lakeside cafes and paragliding adventures.</p>
+              <div class="tag">Nature • Adventure</div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://images.theconversation.com/files/680531/original/file-20250716-64-8usuxx.jpg?ixlib=rb-4.1.0&rect=0%2C447%2C4032%2C2016&q=45&auto=format&w=668&h=334&fit=crop" alt="mountain everest" />
+            <div class="card-body">
+              <h3><a href="https://en.wikipedia.org/wiki/Mount_Everest">MT.Everset</a></h3>
+              <p>Classic trekking route — panoramic mountain passes, highest peak in the world.</p>
+              <div class="tag">Trekking • Panorama</div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDYUnuDPCcZkGSEBD-qXRsX9M7ZoI-VQjQxg&s" alt="Lumbini" />
+            <div class="card-body">
+              <h3><a href="https://en.wikipedia.org/wiki/Lumbini">LUMBINI</a></h3>
+              <p>Birthplace of Buddha — serene gardens, monasteries from around the world.</p>
+              <div class="tag">Pilgrimage • Peace</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="itinerary" class="itinerary">
+        <div class="it-card">
+          <h2>Sample 7-Day Itinerary</h2>
+          <div class="day">
+            <div class="num">1</div>
+            <div>
+              <h4>Arrival — Kathmandu</h4>
+              <p>Transfer to hotel, evening stroll around Thamel and welcome dinner.</p>
+            </div>
+          </div>
+
+          <div class="day">
+            <div class="num">2</div>
+            <div>
+              <h4>Kathmandu sightseeing</h4>
+              <p>Visit Swayambhunath, Durbar Square,Hanauman dhoka temple and Pashupatinath. Cultural highlights.</p>
+            </div>
+          </div>
+
+          <div class="day">
+            <div class="num">3</div>
+            <div>
+              <h4>Drive to Pokhara</h4>
+              <p>Scenic drive (or short flight), lakeside evening and optional boat ride.</p>
+            </div>
+          </div>
+
+          <div class="day">
+            <div class="num">4</div>
+            <div>
+              <h4>Day trip: lumbini</h4>
+              <p>Early sunrise viewpoints and local village walk and visit Gautam BUddha temple.</p>
+            </div>
+          </div>
+
+          <div class="day">
+            <div class="num">5</div>
+            <div>
+              <h4>treck mountian  Everset.</h4>
+              <p>Easy hike with tea-house stop and panoramic mountain views.Look ice  mountain and himalayan view</p>
+            </div>
+          </div>
+
+          <div class="day">
+            <div class="num">6</div>
+            <div>
+              <h4>Return to Kathmandu</h4>
+              <p>Leisure day, shopping and optional cultural show in the evening.</p>
+            </div>
+          </div>
+
+          <div class="day">
+            <div class="num">7</div>
+            <div>
+              <h4>Departure</h4>
+              <p>Transfer to airport. Trip ends.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="it-card" id="book">
+          <h3>Book this trip</h3>
+          <p class="small">Fill in details and we'll contact you (demo form — not connected to a server).</p>
+          <form onsubmit="event.preventDefault(); alert('Thanks! Demo booking received.');">
+            <label class="small">Full name</label>
+            <input type="text" placeholder="Your name" required />
+            <label class="small">Email</label>
+            <input type="email" placeholder="you@example.com" required />
+            <label class="small">Trip start</label>
+            <input type="date" />
+            <label class="small">Guests</label>
+            <select>
+              <option>1</option>
+              <option selected>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+            <label class="small">Notes</label>
+            <input type="text" placeholder="Any requests or questions" />
+            <button type="submit" class="btn btn-primary">Request booking</button>
+          </form>
+
+          <div style="height:12px"></div>
+          <div class="small">Price guide: <strong>25% OFF</strong> — excludes airfare.</div>
+        </aside>
+      </section>
+
+    </main>
+
+    <footer>
+      Built with ❤️ — demo single-file HTML/CSS/js for a "Trip of Nepal" landing page.
+    </footer>
+  </div>
+  <script src="java.js" defer></script>
+
+
+</body>
+</html>
